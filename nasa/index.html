@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest API</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+ </head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <h1><span class="greencolor">E</span>PALACAY</h1>
+        <h5>PHOTOGRAPHY BLOG</h5>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h6>Photo of the Day</h6>
+            <h2>Brown Mountains Surrounding Lake</h2>
+            <p>A breathtaking view of a serene mountain lake, perfectly mirroring the sky and surrounding peaks. The snow-capped mountains in the background rise majestically, bathed in golden sunlight, while the deep blue sky is streaked with wispy white clouds. Along the water’s edge, a few visitors can be seen admiring the view, adding a sense of scale and adventure. </p>
+        </div>
+    </section>
+
+    <!-- main container -->
+    <main class="content">
+        <section class="main-content">
+            <h2>Welcome to My Blog</h2>
+            <div class="content-wrapper">
+                <img src="assets/images/welcome.jpg" alt="Welcome Image" class="welcome-image"></div>
+                <div class="text-content">
+                    <p>Hello and welcome to my little corner of the internet! I'm thrilled to have you here. This blog is a space where I share my passion for technology, design, and creativity. Whether it’s the wonders of space, the beauty of our planet, or the latest in digital media, you'll find a mix of inspiration, learning, and exploration right here.</p>
+                    <p>You’ll discover stunning NASA images, real-time weather updates, and hand-picked visuals from Unsplash to fuel your creativity. As I continue to grow this space, I’ll be sharing more about design, technology, and interactive media—so stay tuned!</p>
+                    <p>Feel free to explore, get inspired, and connect. I’d love to hear your thoughts, so don’t hesitate to drop a comment or reach out.</p>
+                </div>
+            </div>
+        </section>
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <h3>Check Weather</h3>
+            <form id="weather-form">
+                <label for="city-select">Select a city:</label>
+                <select id="city-select">
+                    <option value="Toronto">Toronto</option>
+                    <option value="Windsor">Windsor</option>
+                    <option value="Hamilton">Hamilton</option>
+                    <option value="Thunder Bay">Thunder Bay</option>
+                </select>
+                <button type="submit">Get Weather</button>
+            </form>
+            <!-- weather data will be displayed here -->
+             <div class="weather-info" id="weather-info">
+                <p>Fetching weather data...</p>
+            </div>           
+            <!-- about me links -->
+            <div class="aboutme">
+                <h3>More About Me</h3>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Trademark & Copy</a></li>
+                <li><a href="#">Get in Touch</a></li>
+            </div>
+        </aside>
+    </main>
+   
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-info">
+            <h3><span class="greencolor">E</span>PALACAY</h3>
+            <p>This is my personal blog for handcrafted, camera-made photography.</p>
+            <nav>
+                <ul class="footer-nav-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Unsplash</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Liter&family=Unbounded:wght@200..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #fff;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Unbounded", serif;
+}
+
+
+h6{
+    font-family: "Unbounded", serif;
+    color: #87e64b;
+    
+}
+
+
+p{
+    font-size: 12px;
+    margin-top: 20px;
+    font-family: "Liter", serif;
+}
+
+.greencolor{
+    color: #87e64b;
+}
+
+
+
+/* header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+nav{
+    margin-top: 20px;
+    border-top: #dbdbdb 1px solid;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 10px 0;
+    font-family: "Liter", serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform:uppercase;
+}
+
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links li a:hover {
+    color: #87e64b;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    background-image: url(../images/hero.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-color: #000; 
+    padding: 20px;
+    color: #fff;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 1000px;
+    text-align: center;
+    color: #333;
+}
+
+
+/* main */
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 20px;
+}
+
+.welcome-image {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.text-content {
+    width: 100%;
+    text-align: left;
+}
+
+/* sidebar section */
+.sidebar {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* sidebar input */
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sidebar button {
+    background: #86e54a;
+    color: 000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #000;
+    color: #86e54a;
+}
+
+.aboutme{
+    margin-top: 30px;
+}
+
+.sidebar a{
+    color: #86e54a;
+    font-family: "Liter", serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.sidebar li{
+    margin-top: 10px;
+}
+
+.sidebar a:hover{
+    color: #000;
+}
+
+/* weather info */
+.weather-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.weather-info img {
+    width: 60px;
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 12px;
+    font-family: "Liter", serif;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 10px 0;
+    font-family: "Liter", serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform:uppercase;
+}
+
+.footer-nav-links a{
+    color: #86e54a;
+}
+
+.footer-nav-links a:hover{
+    color: #000;
+}
+
+
+/* responsive */
+@media (min-width: 768px) {
+
+
+    .content {
+        flex-direction: row;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .welcome-image {
+        width: 100%;
+
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    .main-content {
+        flex: 3;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* hide nav on mobile */
+@media (max-width: 768px) {
+    .nav-links, .footer-nav-links {
+        display: none;
+    }
+
+    
+}
